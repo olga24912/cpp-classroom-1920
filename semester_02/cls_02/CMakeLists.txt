@@ -12,5 +12,5 @@ endif()
 
 include_directories(src)
 
-#add_executable(task-1-test src/task_1/test.cpp)
+add_executable(task-1-test src/task_1/test.cpp src/task_1/unique_ptr.hpp)
 #add_executable(task-2-test src/task_2/test.cpp)

@@ -2,6 +2,7 @@
 
 #include <type_traits>
 #include <cassert>
+#include <string>
 
 void test_class_props() {
     using int_unique_ptr = cls_2::unique_ptr<int>;
@@ -66,6 +67,7 @@ void test_basic_methods() {
 }
 
 void test_deletion_happens() {
+    using uint=unsigned int;
     uint destructions = 0;
     struct DestructionAware {
         uint* count_;
